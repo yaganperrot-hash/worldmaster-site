@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — WorldMaster</title>
+<meta name="description" content="Politique de confidentialité de l'application WorldMaster.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #070d10;
+    font-family: 'Inter', sans-serif;
+    color: #F7F7F2;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: #AFFF99; text-decoration: none; }
+  a:hover { color: #8CFF6B; text-decoration: underline; }
+
+  .page {
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse 900px 700px at 10% 0%, rgba(140,255,130,0.22), transparent 55%),
+      radial-gradient(ellipse 900px 800px at 95% 30%, rgba(255,164,2,0.18), transparent 55%),
+      #070d10;
+    padding: 40px 56px 60px;
+  }
+
+  .navbar { display: flex; align-items: center; gap: 12px; }
+  .brand {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #F7F7F2;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+  .brand:hover { text-decoration: none; color: #F7F7F2; }
+
+  .content {
+    max-width: 640px;
+    margin: 48px auto 0;
+  }
+
+  h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .updated {
+    display: inline-block;
+    background: rgba(175,255,153,0.15);
+    color: #AFFF99;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+  }
+
+  h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 32px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #AFFF99;
+  }
+
+  p { font-size: 15px; line-height: 1.7; color: rgba(247,247,242,0.8); margin-bottom: 12px; }
+  p strong { color: #F7F7F2; }
+
+  ul { margin: 8px 0 16px 20px; }
+  li { font-size: 15px; line-height: 1.7; color: rgba(247,247,242,0.8); margin-bottom: 6px; }
+  li strong { color: #F7F7F2; }
+
+  .footer {
+    max-width: 640px;
+    margin: 48px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .copy { font-size: 13px; color: rgba(247,247,242,0.5); }
+  .footer-links { display: flex; gap: 18px; font-size: 13px; }
+  .footer-links a { color: rgba(247,247,242,0.65); text-decoration: none; }
+  .footer-links a:hover { color: rgba(247,247,242,0.85); }
+
+  @media (max-width: 768px) {
+    .page { padding: 28px 20px 40px; }
+    h1 { font-size: 24px; }
+    .footer { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <nav class="navbar">
+    <a href="/" class="brand">WorldMaster</a>
+  </nav>
+
+  <div class="content">
+
+    <h1>Politique de confidentialité</h1>
+    <span class="updated">Dernière mise à jour : 17 mars 2026</span>
+
+    <p>
+      Bienvenue sur <strong>WorldMaster</strong>. Cette politique de confidentialité explique
+      quelles données nous collectons, comment nous les utilisons et vos droits en matière
+      de protection des données. En utilisant l'application, vous acceptez les pratiques
+      décrites ci-dessous.
+    </p>
+
+    <h2>1. Données collectées</h2>
+    <p>WorldMaster collecte un minimum de données pour fonctionner :</p>
+    <ul>
+      <li><strong>Pseudo choisi par l'utilisateur</strong> — nom affiché dans les classements et le mode multijoueur. Aucune vérification d'identité n'est requise.</li>
+      <li><strong>Données de progression</strong> — XP, points, streak, vies, items de boutique. Stockées localement sur l'appareil.</li>
+      <li><strong>Données de match multijoueur</strong> — pseudo, score, réponses, statut de partie. Transmises à Firebase Realtime Database le temps de la partie, puis supprimées automatiquement.</li>
+      <li><strong>Identifiant anonyme Firebase</strong> — généré automatiquement pour le mode multijoueur. Aucune adresse e-mail ni numéro de téléphone n'est associé.</li>
+      <li><strong>Adresse e-mail (optionnel)</strong> — uniquement si vous choisissez de lier votre compte Google pour la sauvegarde. Jamais partagée avec des tiers.</li>
+      <li><strong>Données de diagnostic</strong> — rapports de crash anonymes via Firebase Crashlytics, et données d'usage agrégées via Firebase Analytics.</li>
+    </ul>
+    <p>
+      Nous ne collectons <strong>pas</strong> : nom réel, numéro de téléphone, localisation GPS, contacts, photos, ni aucune donnée bancaire.
+    </p>
+
+    <h2>2. Utilisation des données</h2>
+    <p>Les données collectées sont utilisées uniquement pour :</p>
+    <ul>
+      <li>Faire fonctionner le mode multijoueur en temps réel.</li>
+      <li>Afficher les classements hebdomadaires et le Hall of Fame.</li>
+      <li>Sauvegarder la progression de l'utilisateur entre les sessions.</li>
+      <li>Détecter et corriger les bugs (Crashlytics).</li>
+      <li>Améliorer l'application grâce aux données d'usage agrégées et anonymes (Analytics).</li>
+    </ul>
+
+    <h2>3. Partage des données</h2>
+    <p>
+      Nous ne vendons, n'échangeons ni ne louons vos données personnelles à des tiers.
+      Les données sont partagées uniquement avec :
+    </p>
+    <ul>
+      <li><strong>Google Firebase</strong> (Auth, Realtime Database, Crashlytics, Analytics) — hébergé par Google LLC. Voir la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a>.</li>
+    </ul>
+
+    <h2>4. Conservation des données</h2>
+    <ul>
+      <li>Données de match : supprimées après la fin de la partie (quelques heures max).</li>
+      <li>Classements (pseudo + score) : conservés tant que le compte est actif.</li>
+      <li>Données locales (progression) : stockées sur l'appareil, supprimées avec l'app.</li>
+      <li>Rapports de crash : conservés 90 jours par Firebase Crashlytics.</li>
+      <li>Logs de réponses : conservés localement 90 jours, jamais envoyés sur nos serveurs.</li>
+    </ul>
+
+    <h2>5. Sécurité</h2>
+    <p>
+      Les communications entre l'application et nos serveurs sont chiffrées via TLS/HTTPS.
+      Firebase applique ses propres mesures de sécurité conformément aux standards de
+      l'industrie. Aucun mot de passe n'est stocké car l'authentification est anonyme.
+    </p>
+
+    <h2>6. Enfants (moins de 13 ans)</h2>
+    <p>
+      WorldMaster est conçu pour tous les âges. Nous ne collectons sciemment aucune
+      information personnelle identifiable d'enfants de moins de 13 ans. Si vous êtes
+      parent ou tuteur et pensez que votre enfant nous a fourni des données personnelles,
+      contactez-nous pour les faire supprimer.
+    </p>
+
+    <h2>7. Vos droits (RGPD)</h2>
+    <p>Si vous résidez dans l'Espace économique européen, vous avez le droit de :</p>
+    <ul>
+      <li>Accéder aux données vous concernant.</li>
+      <li>Demander la rectification ou la suppression de vos données.</li>
+      <li>Vous opposer au traitement de vos données.</li>
+      <li>Demander la portabilité de vos données.</li>
+    </ul>
+    <p>
+      Pour exercer ces droits, contactez-nous à l'adresse indiquée en section 9.
+      Nous répondrons dans un délai de 30 jours.
+    </p>
+    <p>
+      Vous pouvez <a href="/delete-account.html">supprimer votre compte</a> à tout moment depuis l'application ou par email.
+    </p>
+
+    <h2>8. Modifications</h2>
+    <p>
+      Nous pouvons mettre à jour cette politique occasionnellement. La date de
+      « Dernière mise à jour » en haut de cette page sera modifiée en conséquence.
+      Nous vous encourageons à consulter cette page régulièrement.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>Pour toute question relative à cette politique de confidentialité ou à vos données :</p>
+    <p>
+      <a href="mailto:worldmastercontacts@gmail.com">worldmastercontacts@gmail.com</a>
+    </p>
+
+  </div>
+
+  <footer class="footer">
+    <span class="copy">&copy; 2026 WorldMaster</span>
+    <div class="footer-links">
+      <a href="mailto:worldmastercontacts@gmail.com">worldmastercontacts@gmail.com</a>
+      <a href="/delete-account.html">Supprimer mon compte</a>
+      <a href="/">Accueil</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
